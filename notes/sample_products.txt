@@ -1,0 +1,10 @@
+1, iPhone Case, Protective silicone case, 19.99, AppleStore
+2, Wireless Mouse, Ergonomic bluetooth mouse, 24.50, Logitech
+3, Keyboard, Mechanical keyboard, 59.99, KeyTech
+4, USB Cable, Fast charging cable, 9.99, Anker
+5, Monitor Stand, Adjustable aluminum stand, 34.99, Dell
+6, Laptop Bag, Waterproof laptop bag, 42.00, HP
+7, Webcam, Full HD webcam, 65.75, Logitech
+8, Headphones, Noise cancelling headphones, 89.99, Sony
+9, Power Bank, 10000mAh portable charger, 29.99, Baseus
+10, Desk Lamp, LED study lamp, 21.49, Philips

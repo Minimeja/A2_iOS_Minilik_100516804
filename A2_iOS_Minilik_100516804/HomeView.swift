@@ -1,0 +1,60 @@
+import SwiftUI
+import CoreData
+
+struct HomeView: View {
+    @FetchRequest(
+        entity: Product.entity(),
+        sortDescriptors: [NSSortDescriptor(keyPath: \Product.productName, ascending: true)]
+    ) var products: FetchedResults<Product>
+
+    @State private var currentIndex = 0
+
+    var body: some View {
+        NavigationView {
+            VStack(spacing: 20) {
+                if products.isEmpty {
+                    Text("No products available")
+                        .font(.headline)
+                } else {
+                    let product = products[currentIndex]
+
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text("Product ID: \(product.productID ?? "")")
+                        Text("Name: \(product.productName ?? "")")
+                            .font(.title2)
+                            .bold()
+                        Text("Description: \(product.productDescription ?? "")")
+                        Text(String(format: "Price: %.2f", product.productPrice))
+                        Text("Provider: \(product.productProvider ?? "")")
+                    }
+                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(Color(.systemGray6))
+                    .cornerRadius(12)
+
+                    HStack(spacing: 20) {
+                        Button("Previous") {
+                            if currentIndex > 0 {
+                                currentIndex -= 1
+                            }
+                        }
+                        .disabled(currentIndex == 0)
+
+                        Button("Next") {
+                            if currentIndex < products.count - 1 {
+                                currentIndex += 1
+                            }
+                        }
+                        .disabled(currentIndex == products.count - 1)
+                    }
+                }
+
+                NavigationLink("View Full Product List", destination: ContentView())
+                NavigationLink("Search Product", destination: SearchProductView())
+                NavigationLink("Add Product", destination: AddProductView())
+            }
+            .padding()
+            .navigationTitle("Home")
+        }
+    }
+}

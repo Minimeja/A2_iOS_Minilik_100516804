@@ -1,8 +1,0 @@
-Entity: Product
-
-Attributes:
-- productID : String
-- productName : String
-- productDescription : String
-- productPrice : Double
-- productProvider : String

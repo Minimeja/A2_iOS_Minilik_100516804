@@ -24,7 +24,7 @@ struct SearchProductView: View {
     var body: some View {
         NavigationView {
             VStack {
-                TextField("Search by name or description", text: $searchText)
+                TextField("Search product by name or description", text: $searchText)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
 

@@ -2,7 +2,8 @@ import CoreData
 
 struct PersistenceController {
     static let shared = PersistenceController()
-
+    
+    // Core Data setup
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {

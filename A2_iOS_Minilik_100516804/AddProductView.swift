@@ -22,7 +22,7 @@ struct AddProductView: View {
             }
 
             .padding(.vertical, 5)
-            .navigationTitle("Add Product")
+            .navigationTitle("Add New Product")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("Cancel") {

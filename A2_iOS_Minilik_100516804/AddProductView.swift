@@ -20,6 +20,8 @@ struct AddProductView: View {
                 TextField("Product Price", text: $productPrice)
                 TextField("Product Provider", text: $productProvider)
             }
+
+            .padding(.vertical, 5)
             .navigationTitle("Add Product")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {

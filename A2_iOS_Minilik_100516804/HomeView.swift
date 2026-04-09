@@ -20,7 +20,7 @@ struct HomeView: View {
                     Text("No products found")
                         .font(.headline)
                 } else {
-                    let product = products[currentIndex]
+                    let currentProduct = products[currentIndex]
                     
                     //didplay product details
                     VStack(alignment: .leading, spacing: 10) {

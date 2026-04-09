@@ -17,7 +17,7 @@ struct HomeView: View {
 
                 // show message if no products
                 if products.isEmpty {
-                    Text("No products available")
+                    Text("No products found")
                         .font(.headline)
                 } else {
                     let product = products[currentIndex]

@@ -35,12 +35,12 @@ struct ContentView: View {
 
             .toolbar {
 
-                // LEFT: Edit (optional delete UI)
+                // LEFT: Edit 
                 ToolbarItem(placement: .navigationBarLeading) {
                     EditButton()
                 }
 
-                // RIGHT: Add + Search buttons
+                // RIGHT: Add + Search 
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
 
                     // Add Product
@@ -50,14 +50,14 @@ struct ContentView: View {
                         Image(systemName: "plus")
                     }
 
-                    // Search Screen
+                    // Search 
                     NavigationLink(destination: SearchProductView()) {
                         Image(systemName: "magnifyingglass")
                     }
                 }
             }
 
-            // Show Add Product Screen
+            // Show Add Product 
             .sheet(isPresented: $showAddProduct) {
                 AddProductView()
                     .environment(\.managedObjectContext, viewContext)
@@ -65,7 +65,6 @@ struct ContentView: View {
         }
     }
 
-    // DELETE FUNCTION (optional but useful)
     private func deleteProducts(offsets: IndexSet) {
         withAnimation {
             offsets.map { products[$0] }.forEach(viewContext.delete)

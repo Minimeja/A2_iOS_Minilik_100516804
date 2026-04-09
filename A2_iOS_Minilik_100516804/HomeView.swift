@@ -31,6 +31,7 @@ struct HomeView: View {
                         Text("Description: \(product.productDescription ?? "")")
                         Text(String(format: "Price: %.2f", product.productPrice))
                         Text("Provider: \(product.productProvider ?? "")")
+                            .foregroundColor(.gray)
                     }
                     .background(Color(.systemGray6))
                     .padding()

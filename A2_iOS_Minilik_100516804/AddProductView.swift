@@ -22,6 +22,7 @@ struct AddProductView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 TextField("Product Price", text: $productPrice)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .keyboardType(.decimalPad)  
                 TextField("Product Provider", text: $productProvider)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }

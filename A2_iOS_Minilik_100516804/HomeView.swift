@@ -32,9 +32,9 @@ struct HomeView: View {
                         Text(String(format: "Price: %.2f", product.productPrice))
                         Text("Provider: \(product.productProvider ?? "")")
                     }
+                    .background(Color(.systemGray6))
                     .padding()
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .background(Color(.systemGray6))
                     .cornerRadius(12)
                     
                     // Navigation buttons

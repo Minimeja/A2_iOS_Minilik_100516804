@@ -15,10 +15,15 @@ struct AddProductView: View {
         NavigationView {
             Form {
                 TextField("Product ID", text: $productID)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                 TextField("Product Name", text: $productName)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                 TextField("Product Description", text: $productDescription)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                 TextField("Product Price", text: $productPrice)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                 TextField("Product Provider", text: $productProvider)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
             }
 
             .padding(.vertical, 5)

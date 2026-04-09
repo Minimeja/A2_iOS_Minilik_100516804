@@ -37,6 +37,7 @@ struct HomeView: View {
                     .padding()
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .cornerRadius(12)
+                    .shadow(radius: 2)
                     
                     // Navigation buttons
                     HStack(spacing: 20) {

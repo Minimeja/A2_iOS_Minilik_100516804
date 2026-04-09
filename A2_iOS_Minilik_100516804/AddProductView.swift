@@ -29,7 +29,7 @@ struct AddProductView: View {
                 }
 
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Save") {
+                    Button("Save Product") {
                         saveProduct()
                     }
                 }

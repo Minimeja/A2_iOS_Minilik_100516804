@@ -13,7 +13,7 @@ struct HomeView: View {
 
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
+            VStack(spacing: 18) {
 
                 // show message if no products
                 if products.isEmpty {

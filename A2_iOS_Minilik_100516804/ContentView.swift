@@ -31,7 +31,7 @@ struct ContentView: View {
                 }
                 .onDelete(perform: deleteProducts)
             }
-            .navigationTitle("Products")
+            .navigationTitle("Product List")
 
             .toolbar {
 
